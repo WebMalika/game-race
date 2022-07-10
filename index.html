@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Чемпион</title>
+	<link rel="stylesheet"
+		href="style.css">
+	<meta charset="utf-8">
+	<meta name='viewport'
+		content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+	<meta name="apple-mobile-web-app-capable"
+		content="yes">
+	<meta name="mobile-web-app-capable"
+		content="yes">
+	<meta name="HandheldFriendly"
+		content="true" />
+	<link rel="shortcut icon"
+		href="ico.jpg"
+		type="image/x-icon">
+</head>
+
+<body>
+	<form action="#"
+		class="formStart ">
+		<div class="logo">
+			<img src="images/XXL.png"
+				alt="иконка игры">
+			<h1 class="nfs">Чемпион</h1>
+		</div>
+		<p class="hello">Привет, гонщик! Давай познакомимся? Введи своё имя:</p>
+		<div class="game-start-block">
+			<input type="text"
+				name="userName"
+				id="userName">
+			<button type="submit"
+				id="startGame"
+				class="btn btn-primary">Начать</button>
+		</div>
+
+		<div class="rigth-block">
+			<h2 class="nfs">взаимодействие</h2>
+			<div class="key-rigths">
+				<div class="key-rigth">
+					<span>Управление:</span>
+					<img src="images/mouse.png"
+						alt="">
+				</div>
+				<div class="key-rigth">
+					<span>Пауза:</span>
+					<div class="key-esc">esc</div>
+				</div>
+				<div class="key-rigth">
+					<span>Увеличить скорость:</span>
+					<div class="key-esc">space</div>
+				</div>
+			</div>
+
+		</div>
+	</form>
+
+	<div class="counter-wrapper hide">
+		<div class="pulse"></div>
+		<div class="cont">3</div>
+	</div>
+	<div class="stopWindow hide">
+		<h1 class="nfs stop-title">Игра окончена</h1>
+		<p class="userlose hide"></p>
+		<p class="userstop hide"></p>
+		<div class="btn-group">
+			<button class="btn btn-primary"
+				id="btn-restart">Заново</button>
+			<button class="btn btn-secondary"
+				id="btn-pause">Продолжить</button>
+			<button class="btn btn-tree"
+				id="btn-null">Обнулить</button>
+		</div>
+		<div class="rigth-block">
+			<h2 class="nfs">взаимодействие</h2>
+			<div class="key-rigths">
+				<div class="key-rigth">
+					<span>Управление:</span>
+					<img src="images/mouse.png"
+						alt="">
+				</div>
+				<div class="key-rigth">
+					<span>Пауза:</span>
+					<div class="key-esc">esc</div>
+				</div>
+				<div class="key-rigth">
+					<span>Увеличить скорость:</span>
+					<div class="key-esc">space</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div class="wrapper">
+		<canvas width="0"
+			height="0"
+			class="canvas"
+			id="canvas">Your browser does not support JavaScript and HTML5!</canvas>
+	</div>
+
+
+	<script src="game.js"></script>
+</body>
+
+</html>
